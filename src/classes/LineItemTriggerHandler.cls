@@ -1,5 +1,11 @@
 public with sharing class LineItemTriggerHandler {
 		
+
+		/*
+		Useless comment, just to create a fucking pull request
+
+		*/
+
 	/* Public methods
 	========================= */
 	
@@ -13,6 +19,8 @@ public with sharing class LineItemTriggerHandler {
 		for (Line_Item__c i : items) {
 			orderIds.add(i.Order__c);
 		}
+
+		String p = 'yeah';		
 		
 		// load required data: 1) related orders 2) force reload all line items for those orders
 		List<Order__c> orders = [SELECT Purchased__c,Product_Category_1__c,Product_Category_Units_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c WHERE Id in :orderIds];
