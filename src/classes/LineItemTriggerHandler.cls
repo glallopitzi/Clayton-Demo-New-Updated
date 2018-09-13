@@ -31,7 +31,11 @@ public with sharing class LineItemTriggerHandler {
 		updatePurchasedAmount(orders, lineItems);
 		updateCategories(orders, lineItems);
 
-		update orders;
+		try {
+			update orders;
+		} catch(exception e){
+		
+		}
 		
 	}
 	
