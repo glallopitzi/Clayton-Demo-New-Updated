@@ -171,7 +171,7 @@ public with sharing class PobControllerExt {
 	}
 	
 	/** Saves and order */
-	public PageReference save() {
+	public PageReference saveNotLinked() {
 		Savepoint sp = Database.setSavepoint();
 		try {
 			// create or update purchase order
