@@ -7,6 +7,8 @@
 	<apex:form >
 		<apex:pageBlock title="{!$Label.POB_Title}" mode="edit">
 		
+
+		
 			<!-- Buttons
 			============================= -->
 			<apex:pageBlockButtons >

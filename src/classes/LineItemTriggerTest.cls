@@ -22,6 +22,8 @@
 @isTest
 private class LineItemTriggerTest {
 	
+
+	
 	private static final Integer TEST_VOLUMES_NUMBER_OF_ACCOUNTS = 100;
 	private static final Integer TEST_VOLUMES_NUMBER_OF_LOTS = 1000;
 	private static final Integer TEST_VOLUMES_LINE_ITEMS_PER_PURCHASE = 10;
