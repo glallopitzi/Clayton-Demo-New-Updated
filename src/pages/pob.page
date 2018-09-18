@@ -12,7 +12,7 @@
 			<!-- Buttons
 			============================= -->
 			<apex:pageBlockButtons >
-				<apex:commandButton value="{!$Label.POB_Save}" action="{!save}"/>
+				<apex:commandButton value="{!$Label.POB_Save}" action="{!saveUpd}"/>
 				<apex:commandButton value="{!$Label.POB_Cancel}" action="{!cancel}"/>
 			</apex:pageBlockButtons>
 			
