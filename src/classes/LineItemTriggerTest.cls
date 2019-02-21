@@ -93,7 +93,7 @@ private class LineItemTriggerTest {
 		
 	}
 	
-	@IsTest(seeAllData=false)
+	@IsTest(seeAllData='false')
 	private static void testOrphanLineItems() {
 		
 		User accountManager = TestDataFactory.createUser('Account Managers', 'aManager');
