@@ -1,4 +1,4 @@
-public with sharing class PobControllerExt {
+public class PobControllerExt {
 
 	// Summary, filter, etc.
 	public String heading {get;set;}
@@ -67,6 +67,7 @@ public with sharing class PobControllerExt {
 		Schema.DescribeFieldResult fd = Lot__c.Product_Category__c.getDescribe();
 		for (Schema.PicklistEntry ple : fd.getPicklistValues()) {
 			options.add(new SelectOption(ple.value, ple.label));
+			update ple;
 		}
 		return options;
 	}
