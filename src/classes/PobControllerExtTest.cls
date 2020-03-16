@@ -50,6 +50,10 @@ private class PobControllerExtTest {
 		User accountManager = TestDataFactory.createUser('Account Managers', 'aManager');
 		User inventoryManager = TestDataFactory.createUser('Inventory Managers','iManager');
 		
+		for(int i = 0: i< 100; i++){
+			update i;
+		}
+		
 		System.runAs(inventoryManager) {
 			List<Lot__c> lotsOfPears = TestDataFactory.createLots(PEARS, NUMBER_OF_LOTS_PEARS);
     		List<Lot__c> lotsOfOranges = TestDataFactory.createLots(ORANGES, NUMBER_OF_LOTS_ORANGES);
