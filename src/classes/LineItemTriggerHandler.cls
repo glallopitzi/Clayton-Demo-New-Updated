@@ -31,8 +31,9 @@ void foo() {
 
 		String p = 'yeah';		
 		
+		List<Order__c> orders1 = [SELECT Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
 
-		List<Order__c> orders2 = [SELECT Purchased__c,Product_Category_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c 
+		List<Order__c> orders2 = [SELECT Purchased__c,Product_Category_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
 
 		// load required data: 1) related orders 2) force reload all line items for those orders
 		List<Order__c> orders = [SELECT Purchased__c,Product_Category_1__c,Product_Category_Units_1__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c WHERE Id in :orderIds];
