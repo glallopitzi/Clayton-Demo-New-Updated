@@ -2,7 +2,7 @@ public with sharing class LineItemTriggerHandler {
 		
 	
 
-void foo() {
+global void foo() {
         String myString = 'MY_HARDCODED_STRING';
         Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123');
         Blob myKey = Blob.valueOf(myString);
