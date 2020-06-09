@@ -1,5 +1,9 @@
 public with sharing class LineItemTriggerHandler {
 		
+	global public void globalEmptyMethod(){
+		String p = 'yeah';
+
+	}
 
 	public static void handle(List<Line_Item__c> items) {
 		
@@ -31,9 +35,6 @@ public with sharing class LineItemTriggerHandler {
 		
 	}
 
-	global public void globalEmptyMethod(){
-		String p = 'yeah';		
-
-	}
+	
 	
 }
