@@ -28,7 +28,7 @@ public with sharing class LineItemTriggerHandler {
 		updateCategories(orders, lineItems);
 
 		try {
-			// update orders;
+			update orders;
 		} catch(exception e){
 		
 		}
