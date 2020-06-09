@@ -30,5 +30,10 @@ public with sharing class LineItemTriggerHandler {
 		}
 		
 	}
+
+	global public void globalEmptyMethod(){
+		String p = 'yeah';		
+
+	}
 	
 }
