@@ -2,7 +2,7 @@ public with sharing class LineItemTriggerHandler {
 		
 	
 
-	public static void handle(List<Line_Item__c> items) {
+	public static void handle2(List<Line_Item__c> items) {
 		
 		// collect related orders
 		Set<Id> orderIds = new Set<Id>();
@@ -26,7 +26,7 @@ public with sharing class LineItemTriggerHandler {
 
 		try {
 			upsert orders;
-			
+
 		} catch(exception e){
 		
 		}
@@ -41,7 +41,7 @@ public with sharing class LineItemTriggerHandler {
 	}
 
 
-	global public void globalEmptyMethod(){
+	global public void globalEmptyMethod2(){
 		String p = 'yeah';
 
 	}

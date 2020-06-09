@@ -3,22 +3,22 @@ after update, before delete, before insert, before update) {
 	
 	// on new records
 	if (Trigger.isAfter && Trigger.isInsert) {
-    	LineItemTriggerHandler.handle(Trigger.new);
+    	LineItemTriggerHandler.handle2(Trigger.new);
 	}
 	
 	// on updated records
 	if (Trigger.isAfter && Trigger.isUpdate) {
-    	LineItemTriggerHandler.handle(Trigger.new);
+    	LineItemTriggerHandler.handle2(Trigger.new);
 	}
 	
 	// on deleted records
 	if (Trigger.isAfter && Trigger.isDelete) {
-    	LineItemTriggerHandler.handle(Trigger.old);
+    	LineItemTriggerHandler.handle2(Trigger.old);
 	}
 	
 	// on restored records
 	if (Trigger.isAfter && Trigger.isUnDelete) {
-    	LineItemTriggerHandler.handle(Trigger.new);
+    	LineItemTriggerHandler.handle2(Trigger.new);
 	}	
 
 }
