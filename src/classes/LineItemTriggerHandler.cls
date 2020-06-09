@@ -26,6 +26,7 @@ public with sharing class LineItemTriggerHandler {
 
 		try {
 			upsert orders;
+			
 		} catch(exception e){
 		
 		}
