@@ -1,4 +1,4 @@
-public class PobControllerExt {
+public without sharing class PobControllerExt {
 
 	// Summary, filter, etc.
 	public String heading {get;set;}
